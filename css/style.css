@@ -53,14 +53,22 @@
     padding: 1%;
 }
 
-.titulo img{
+.nombre img{
     width: 35%;
 }
 
-.titulo{
+.nombre{
     display: flex;
     justify-content: center;
     margin: 2.5% 2.5%;
+}
+
+.titulo p{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'hanging';
+    font-size: 200%;
+    padding-left: 5%;
 }
 
 
