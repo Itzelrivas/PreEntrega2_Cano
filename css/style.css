@@ -16,40 +16,51 @@
 :root{
     --bg-principal: rgb(255, 218, 234);
     --color-principal: rgb(255, 63, 178);
+    --color-dorado: rgb(234, 180, 64);
 }
 
 .header {
     background-color: var(--bg-principal);
-    display: grid;
-    grid-template-columns: 6% 94%;
-    grid-template-rows: auto;
-    grid-template-areas: "logo buscar";
+    display:flex;
 }
 
-.header__logo{grid-area: logo;}
-.header__boton{grid-area: buscar;}
 
 .header__logo img{
     display: flex;
-    width: 100%;
-    padding: 6%;
+    width: 8%;
+    padding: .5%;
 }
 
-.header__boton{
+.nav__menu {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: .6%;
+    justify-content: space-around;
+    background-color: var(--color-dorado);
 }
 
-.header__boton button{
-    border-radius: 20px;
-    border-color: var(--color-principal);
-    background-color: var(--bg-principal);
-    color: var(--color-principal);
-    height: 50%;
-    width: 13%;
-    justify-content: center;
-    font-family: 'chocolatel';
-    font-size: 150%;
+.nav__menu {
+    list-style-type: none;
+    margin: 0 0;
+    padding-left: 0;
 }
+
+.nav__menu a{
+    font-family: 'chocolatel';
+    text-decoration: none;
+    color: white;
+}
+
+.nav__menu li{
+    padding: 1%;
+}
+
+.titulo img{
+    width: 35%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin: 2.5% 2.5%;
+}
+
+
