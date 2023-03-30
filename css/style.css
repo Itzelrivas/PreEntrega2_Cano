@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "hanging";
+    src: url(../Fonts/HangingRegular.ttf);
+}
+
+@font-face {
+    font-family: "chocolate";
+    src: url(../Fonts/TT\ Chocolates\ Trial\ Bold.otf);
+}
+
+@font-face {
+    font-family: "chocolatel";
+    src: url(../Fonts/TT\ Chocolates\ Trial\ Light.otf);
+}
+
+:root{
+    --bg-principal: rgb(255, 218, 234);
+    --color-principal: rgb(255, 63, 178);
+}
+
+.header {
+    background-color: var(--bg-principal);
+    display: grid;
+    grid-template-columns: 6% 94%;
+    grid-template-rows: auto;
+    grid-template-areas: "logo buscar";
+}
+
+.header__logo{grid-area: logo;}
+.header__boton{grid-area: buscar;}
+
+.header__logo img{
+    display: flex;
+    width: 100%;
+    padding: 6%;
+}
+
+.header__boton{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: .6%;
+}
+
+.header__boton button{
+    border-radius: 20px;
+    border-color: var(--color-principal);
+    background-color: var(--bg-principal);
+    color: var(--color-principal);
+    height: 50%;
+    width: 13%;
+    justify-content: center;
+    font-family: 'chocolatel';
+    font-size: 150%;
+}
