@@ -20,9 +20,14 @@ body{margin: 0%;}
     src: url(../fonts/SimpleHandmade.otf);
 }
 
+@font-face {
+    font-family: "auto";
+    src: url(../fonts/Autography.otf);
+}
+
 :root{
     --bg-principal: rgb(255, 218, 234);
-    --color-principal: rgb(255, 63, 178);
+    --color-principal: rgb(255, 63, 108);
     --color-dorado: rgb(234, 180, 64);
 }
 
@@ -87,6 +92,31 @@ p{
     font-family: 'parrafos';
 }
 
+.footer__rs{
+    background-color: var(--bg-principal);
+}
+.footer__rs a{
+    font-family: 'chocolatel';
+    text-decoration: none;
+    color: var(--color-principal);
+}
+.footer__rs li{list-style-type: none;padding: .5% .5%;}
+.footer__rs ul{
+    margin: 0%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0%;
+}
+.footer__autor{
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{margin-top: 15%;}
+.footer__autor p{font-family: 'auto'; color: white;}
+
 @media only screen and (max-width: 768px){
     .nav__menu a{
         font-size: 75%;
@@ -108,6 +138,7 @@ p{
         margin bottom: 5%;
         margin-top: 5%;
     }
+    .footer__autor p{font-size: 10px;}
 }
 
 @media only screen and (min-width: 1024px){
@@ -138,6 +169,7 @@ p{
         margin-left: 12%;
         margin-right: 6%;
     }
+    .footer__autor p{font-size: 20px;}
 }
 
 
