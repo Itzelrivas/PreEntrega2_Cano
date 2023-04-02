@@ -1,16 +1,21 @@
 @font-face {
     font-family: "hanging";
-    src: url(../Fonts/HangingRegular.ttf);
+    src: url(../fonts/HangingRegular.ttf);
 }
 
 @font-face {
     font-family: "chocolate";
-    src: url(../Fonts/TT\ Chocolates\ Trial\ Bold.otf);
+    src: url(../fonts/TT\ Chocolates\ Trial\ Bold.otf);
 }
 
 @font-face {
     font-family: "chocolatel";
-    src: url(../Fonts/TT\ Chocolates\ Trial\ Light.otf);
+    src: url(../fonts/TT\ Chocolates\ Trial\ Light.otf);
+}
+
+@font-face {
+    font-family: "parrafos";
+    src: url(../fonts/SimpleHandmade.otf);
 }
 
 :root{
@@ -35,9 +40,6 @@
     display: flex;
     justify-content: space-around;
     background-color: var(--color-dorado);
-}
-
-.nav__menu {
     list-style-type: none;
     margin: 0 0;
     padding-left: 0;
@@ -50,14 +52,14 @@
 }
 
 .nav__menu li{
-    padding: 1%;
+    padding: .6%;
 }
 
-.nombre img{
+.main__nombre img{
     width: 35%;
 }
 
-.nombre{
+.main__nombre{
     display: flex;
     justify-content: center;
     margin: 2.5% 2.5%;
@@ -69,6 +71,52 @@
     font-family: 'hanging';
     font-size: 200%;
     padding-left: 5%;
+}
+
+.main__pinicial p{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-family: 'parrafos';
+}
+
+@media only screen and (max-width: 768px){
+    .nav__menu a{
+        font-size: 75%;
+    }
+    .main__pinicial{
+        font-size: 15px;
+    }
+    .main__imgpini img{width: 100%;}
+}
+
+@media only screen and (min-width: 1024px){
+    .nav__menu a{
+        font-size: 100%;
+    }
+    .main__pinicial{
+        font-size: 25px;
+    }
+    .main__imgpini{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen parrafo";
+    }
+    
+    .main__imgpini img{grid-area: imagen;
+        width: 100%;
+        margin: 1%;
+    }
+    .main__imgpini p{grid-area: parrafo;
+        font-size: 25px;  
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 3%;
+    }
 }
 
 
