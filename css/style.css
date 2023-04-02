@@ -1,3 +1,5 @@
+body{margin: 0%;}
+
 @font-face {
     font-family: "hanging";
     src: url(../fonts/HangingRegular.ttf);
@@ -56,7 +58,8 @@
 }
 
 .main__nombre img{
-    width: 35%;
+    width: 45%;
+    margin: 3% 3%;
 }
 
 .main__nombre{
@@ -76,6 +79,8 @@
 .main__pinicial p{
     display: flex;
     justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 p{
@@ -86,10 +91,23 @@ p{
     .nav__menu a{
         font-size: 75%;
     }
+    .main__nombre img{
+        width: 65%;
+    }
     .main__pinicial{
         font-size: 15px;
     }
-    .main__imgpini img{width: 100%;}
+    .main__imgpini{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .main__imgpini img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin bottom: 5%;
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -109,6 +127,7 @@ p{
     .main__imgpini img{grid-area: imagen;
         width: 100%;
         margin: 1%;
+        margin-left: 6%;
     }
     .main__imgpini p{grid-area: parrafo;
         font-size: 25px;  
@@ -116,6 +135,8 @@ p{
         justify-content: center; 
         align-items: center;
         margin: 3%;
+        margin-left: 12%;
+        margin-right: 6%;
     }
 }
 
