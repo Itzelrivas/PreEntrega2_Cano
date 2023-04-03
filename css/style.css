@@ -29,6 +29,7 @@ body{margin: 0%;}
     --bg-principal: rgb(255, 218, 234);
     --color-principal: rgb(255, 63, 108);
     --color-dorado: rgb(234, 180, 64);
+    --color-verde: rgb(15, 87, 15);
 }
 
 .header {
@@ -119,9 +120,11 @@ p{
 .footer{margin-top: 15%;}
 .footer__autor p{font-family: 'auto'; color: white;}
 
-.tratamiento{margin-left: 3%; margin-right: 3%;}
-.tratamiento h2{font-family: 'chocolate';}
-.tratamiento p{font-family: 'chocolatel';}
+.procedimientos{margin-left: 3%; margin-right: 3%; margin-bottom: 3%; background-color: beige;}
+.procedimiento__imagen{display: flex;}
+.procedimiento__imagen img{width: 100%;}
+.procedimiento__descripcion h2{font-family: 'chocolate'; color: var(--color-verde);}
+.procedimiento__descripcion p{font-family: 'chocolatel';}
 
 @media only screen and (max-width: 768px){
     .nav__menu a{
@@ -162,8 +165,7 @@ p{
         margin: 1%;
         margin-left: 6%;
     }
-    .main__imgpini p{grid-area: parrafo;
-        font-size: 25px;  
+    .main__imgpini p{grid-area: parrafo; 
         display: flex;
         justify-content: center; 
         align-items: center;
@@ -173,18 +175,18 @@ p{
     }
     .footer__autor p{font-size: 20px;}
 
-    .tratamiento{
+    .procedimientos{
         display: grid;
         grid-template-columns: 75% 25%;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "nombre imagen"
-        "descripcion imagen";
+        grid-template-areas:"descripcion imagen";
+        padding-left: 2%;
+        padding-right: 2%;
     }
-    .tratamiento h2{grid-area: nombre;}
-    .tratamiento p{grid-area: descripcion; font-size: 20px;}
-    .tratamiento img{grid-area: imagen;}
-    .tratamiento img{width: 100%;}
+    .procedimiento__descripcion{grid-area: descripcion; margin-right: 2%;}
+    .procedimiento__imagen{grid-area: imagen;}
+    .procedimiento__imagen img{align-self: center;}
+    .procedimiento__descripcion p{font-size: 20px;}
 }
 
 
