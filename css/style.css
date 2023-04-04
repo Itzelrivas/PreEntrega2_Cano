@@ -29,7 +29,7 @@ body{margin: 0%;}
     --bg-principal: rgb(255, 218, 234);
     --color-principal: rgb(255, 63, 108);
     --color-dorado: rgb(234, 180, 64);
-    --color-verde: rgb(15, 87, 15);
+    --color-verde: rgba(24, 84, 24, 0.845);
 }
 
 .header {
@@ -131,6 +131,19 @@ p{
 
 .informacion__texf{margin-left: 3%; margin-right: 3%;}
 
+.promociones__tratamiento{background-color: var(--color-verde); display: flex; flex-direction: column; align-items: center;}
+.promociones__tratamiento img{width: 80%; margin-bottom: 3%;}
+.promociones__tratamiento h2{margin-bottom: 0%; font-family: 'chocolate'; color: white;}
+.promociones__tratamiento p{color: aliceblue; font-family: 'chocolatel'; margin-left: 3%; margin-right: 3%;}
+.promociones{display: flex; flex-direction: column; flex-wrap: wrap; align-content: center;}
+.promociones__tratamiento--vigencia{background-color: rgb(73, 91, 80); margin-top: 0%; padding: 1.5%;}
+
+.citas__pasos ul{list-style-type: disclosure-closed;}
+.citas__pasos li{font-family: 'chocolate'; margin-bottom: 5%; text-align: center;}
+.citas__pasos a{background-color: var(--color-principal); font-family: 'chocolate'; color: white; padding: 1% 3% 1% 3%;}
+.citas__pasos--boton{display: flex; justify-content: center; margin-bottom: 5%;}
+.citas{display: flex; justify-content: center;}
+
 @media only screen and (max-width: 768px){
     .nav__menu a{
         font-size: 75%;
@@ -164,7 +177,17 @@ p{
 
     .informacion{margin-left: 3%; margin-right: 3%;}
     .informacion__ubi iframe{width: 100%;}
+
+    .promociones__tratamiento p{font-size: 10px;}
+    .promociones{margin-left: 3%; margin-right: 3%;}
+    .promociones__tratamiento{margin-bottom: 6%;}
+
+    .citas__pasos li{font-size: 12.5px;}
+    .citas__pasos ul{padding-left: 4%;}
+    .citas__pasos{margin-left: 10%; margin-right: 10%;}
 }
+
+
 
 @media only screen and (min-width: 1024px){
     .nav__menu a{
@@ -217,6 +240,13 @@ p{
     .informacion__ubi{margin-left: 3%;}
     .informacion__texto{margin-left: 2%; margin-right: 3%; display: flex; flex-wrap: wrap; align-content: center;}
     .informacion__texf{margin-top:  3%;}
+
+    .promociones__tratamiento{width: 60%; margin-bottom: 3%;}
+    .promociones__tratamiento p{font-size: 20px;}
+
+    .citas__pasos{width: 80%;}
+    .citas__pasos li{font-size: 22.5px;}
+    .citas__pasos ul{padding-left: 0%;}
 }
 
 
