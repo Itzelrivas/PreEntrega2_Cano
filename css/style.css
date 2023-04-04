@@ -125,6 +125,12 @@ p{
 .procedimiento__descripcion h2{font-family: 'chocolate'; color: var(--color-verde); margin-top: 0%;}
 .procedimiento__descripcion p{font-family: 'chocolatel';}
 
+.contacto{list-style-type: none;}
+.contacto a{font-family: 'chocolate'; color: white; background-color: var(--color-verde); border-radius: 15px;}
+.contacto ul{padding-left: 0%;}
+
+.informacion__texf{margin-left: 3%; margin-right: 3%;}
+
 @media only screen and (max-width: 768px){
     .nav__menu a{
         font-size: 75%;
@@ -152,6 +158,12 @@ p{
     .procedimientos{margin-bottom: 6%;}
     .procedimiento__imagen img{width: 95%;}
     .procedimiento__imagen{justify-content: center;}
+
+    .contacto a{padding: 3% 3%; padding-left: 15%; padding-right: 15%; font-size: 15px;}
+    .contacto li{margin-bottom: 8%; display: flex; justify-content: center;}
+
+    .informacion{margin-left: 3%; margin-right: 3%;}
+    .informacion__ubi iframe{width: 100%;}
 }
 
 @media only screen and (min-width: 1024px){
@@ -182,7 +194,7 @@ p{
     .footer__autor p{font-size: 20px;}
 
     .pinicial{margin-bottom: 3%;}
-    
+
     .procedimientos{
         display: grid;
         grid-template-columns: 75% 25%;
@@ -196,6 +208,15 @@ p{
     .procedimiento__imagen{grid-area: imagen;}
     .procedimiento__imagen img{width: 100%; align-self: center;}
     .procedimiento__descripcion p{font-size: 20px;}
+
+    .contacto{margin: 5% 5%;}
+    .contacto a{padding: 10% 10%; padding-left: 40%; padding-right: 40%; font-size: 20px;}
+    .contacto ul{display: flex; justify-content: space-around; list-style-type: none;}
+
+    .informacion {display: flex;}
+    .informacion__ubi{margin-left: 3%;}
+    .informacion__texto{margin-left: 2%; margin-right: 3%; display: flex; flex-wrap: wrap; align-content: center;}
+    .informacion__texf{margin-top:  3%;}
 }
 
 
