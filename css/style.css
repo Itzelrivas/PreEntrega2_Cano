@@ -59,6 +59,8 @@ body{margin: 0%;}
     color: white;
 }
 
+.nav__menu a:hover{font-size: 25px; background-color: var(--color-principal); transition: .5s all;}
+
 .nav__menu li{
     padding: .6%;
 }
@@ -144,6 +146,8 @@ p{
 .citas__pasos--boton{display: flex; justify-content: center; margin-bottom: 5%;}
 .citas__pasos--boton a{margin-bottom: 0%;}
 .citas{display: flex; justify-content: center;}
+
+
 
 @media only screen and (max-width: 768px){
     .nav__menu a{
