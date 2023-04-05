@@ -29,7 +29,7 @@ body{margin: 0%;}
     --bg-principal: rgb(255, 218, 234);
     --color-principal: rgb(255, 63, 108);
     --color-dorado: rgb(234, 180, 64);
-    --color-verde: rgba(24, 84, 24, 0.845);
+    --color-verde: rgba(83, 112, 37, 0.845);
 }
 
 .header {
@@ -40,7 +40,7 @@ body{margin: 0%;}
 
 .header__logo img{
     display: flex;
-    width: 8%;
+    width: 6%;
     padding: .5%;
 }
 
@@ -90,7 +90,7 @@ body{margin: 0%;}
 }
 
 p{
-    font-family: 'parrafos';
+    font-family: 'Courier New';
     text-align: center;
 }
 
@@ -117,7 +117,7 @@ p{
 }
 .pinicial{margin-left: 3%; margin-right: 3%;}
 
-.footer{margin-top: 15%;}
+.footer{margin-top: 10%;}
 .footer__autor p{font-family: 'auto'; color: white;}
 
 .procedimientos{margin-left: 3%; margin-right: 3%; background-color: beige; padding: 3%;}
@@ -142,6 +142,7 @@ p{
 .citas__pasos li{font-family: 'chocolate'; margin-bottom: 5%; text-align: center;}
 .citas__pasos a{background-color: var(--color-principal); font-family: 'chocolate'; color: white; padding: 1% 3% 1% 3%;}
 .citas__pasos--boton{display: flex; justify-content: center; margin-bottom: 5%;}
+.citas__pasos--boton a{margin-bottom: 0%;}
 .citas{display: flex; justify-content: center;}
 
 @media only screen and (max-width: 768px){
@@ -151,7 +152,7 @@ p{
     .main__nombre img{
         width: 65%;
     }
-    p{font-size: 15px;}
+    p{font-size: 12.5px;}
     .main__imgpini{
         margin-left: 3%;
         margin-right: 3%;
@@ -163,6 +164,7 @@ p{
         margin bottom: 5%;
         margin-top: 5%;
     }
+    .main__imgpini p{margin-top: 5%;}
 
     .titulo p{margin-top: 6%; margin-bottom: 6%;}
 
@@ -179,7 +181,7 @@ p{
     .informacion__ubi iframe{width: 100%;}
 
     .promociones__tratamiento p{font-size: 10px;}
-    .promociones{margin-left: 3%; margin-right: 3%;}
+    .promociones{margin-left: 8%; margin-right: 8%;}
     .promociones__tratamiento{margin-bottom: 6%;}
 
     .citas__pasos li{font-size: 12.5px;}
@@ -193,7 +195,7 @@ p{
     .nav__menu a{
         font-size: 100%;
     }
-    p{font-size: 25px;}
+    p{font-size: 22.5px;}
     .main__imgpini{
         display: grid;
         grid-template-columns: 45% 55%;
@@ -205,6 +207,7 @@ p{
         width: 100%;
         margin: 1%;
         margin-left: 6%;
+        align-self: center;
     }
     .main__imgpini p{grid-area: parrafo; 
         display: flex;
@@ -236,7 +239,7 @@ p{
     .contacto a{padding: 10% 10%; padding-left: 40%; padding-right: 40%; font-size: 20px;}
     .contacto ul{display: flex; justify-content: space-around; list-style-type: none;}
 
-    .informacion {display: flex; flex-direction: row-reverse;}
+    .informacion {display: flex; flex-direction: row-reverse; align-items: center;}
     .informacion__ubi{margin-left: 3%;}
     .informacion__texto{margin-left: 2%; margin-right: 3%; display: flex; flex-wrap: wrap; align-content: center;}
     .informacion__texf{margin-top:  3%;}
